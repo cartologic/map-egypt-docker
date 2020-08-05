@@ -1,0 +1,10 @@
+[submodule "map-egypt.github.io"]
+	path = map-egypt.github.io
+	url = https://github.com/cartologic/map-egypt.github.io.git
+	branch = develop
+[submodule "api"]
+	path = api
+	url = https://github.com/cartologic/api.git
+[submodule "admin"]
+	path = admin
+	url = https://github.com/cartologic/admin.git
