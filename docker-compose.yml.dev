@@ -17,9 +17,11 @@ services:
       - ./pgdata:/var/lib/postgresql/data
     restart: unless-stopped
   site:
-    build: ./map-egypt.github.io/.
+    build:
+      context: ./map-egypt.github.io/.
+      dockerfile: Dockerfile.dev
     ports:
-      - "5000:80"
+      - "5000:3000"
   api:
     build: ./api/.
     env_file:
@@ -28,6 +30,8 @@ services:
       - "5001:5000"
       
   admin:
-    build: ./admin/.
+    build: 
+      context: ./admin/.
+      dockerfile: Dockerfile.dev
     ports:
-      - "5002:80"
+      - "5002:3000"
