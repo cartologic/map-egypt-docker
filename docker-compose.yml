@@ -27,7 +27,7 @@ services:
     ports:
       - "5001:5000"
     volumes:
-      - uploaded:/app
+      - uploaded:/app/uploaded
       
   admin:
     build: ./admin/.
