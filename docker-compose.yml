@@ -32,6 +32,6 @@ services:
   admin:
     build: ./admin/.
     ports:
-      - "9022:80"
+      - "9021:80"
 volumes:
   uploaded:
