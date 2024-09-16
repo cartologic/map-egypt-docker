@@ -29,7 +29,7 @@ services:
     ports:
       - "5001:5000"
     volumes:
-      - uploaded:/app/
+      - ./uploaded:/app/
       
   admin:
     build: 
@@ -37,5 +37,3 @@ services:
       dockerfile: Dockerfile.dev
     ports:
       - "5002:3000"
-volumes:
-  uploaded:
